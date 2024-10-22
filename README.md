@@ -43,7 +43,7 @@ in a sequence (tiles 3, 7, 11, 15). Each configuration is also assigned one of t
 the configuration in Figure 2(b) gets a score of 2 and the configuration in Figure 2(c) gets a score of
 0.
 
-![Figure 2](https://gitlab.com/myself9450436/the-tic-tac-toe-game/-/raw/main/Images/Figure2.png)
+![Figure 2](Images/Figure2.png)
 
 To compute scores, the program will use a recursive algorithm that repeatedly simulates a play
 from the computer followed by a play from the human, until an outcome for the game has been
@@ -66,7 +66,7 @@ A11, A2, B11, B2, and C, the algorithm computes a score for each one of them dep
 whether the computer wins, the human wins, or the game is a draw. These scores are propagated
 upwards as follows:
 
-![Figure 3](https://gitlab.com/myself9450436/the-tic-tac-toe-game/-/raw/main/Images/Figure3.png)
+![Figure 3](Images/Figure3.png)
 
 - For a configuration c on a level labelled “Computer”, the highest score of the adjacent
 configurations in the next level is selected as the score for c. This is because the higher the
@@ -164,7 +164,7 @@ and its score in the dictionary. When later the algorithm explores the right bra
 configuration _D_ will be found again, but this time its score is simply obtained from the dictionary
 instead of exploring all configurations below _D_, thus reducing the running time of the algorithm.
 
-![Figure 4](https://gitlab.com/myself9450436/the-tic-tac-toe-game/-/raw/main/Images/Figure4.png)
+![Figure 4](Images/Figure4.png)
 
 # Implenting the Dictionary
 The dictionary implementation was done using a hash dictionary. Because hash dictionary suffer from collisions, therefore, a hash table with separate chaining was implemented to resolve collisions. Furtheremore, to minimize the number of collisions, a polynomail function was implemented and then compressed using the MAD method.
@@ -191,7 +191,7 @@ private int madHash(String config) {
 The crucial aspect of the MAD Compression Function [(_ai_ + _b_) mod _p_] is to find the correct values of _a_ and _b_ that will result in the least number of collisions. After experimentation producing random generated numbers between [0-_p_] where _a_ > 0. I was able to find that when _a_ = 225549583 and _b_ = 77636339 the minimum amount of collisions produced are 1557 for this specific project.
 
 # Tic-Tac-Toe GamePlay
-![Tic-Tac-Toe Gameplay](https://gitlab.com/myself9450436/the-tic-tac-toe-game/-/raw/main/Images/GamePlay1.gif)
+![Tic-Tac-Toe Gameplay](Images/GamePlay1.gif)
 
 
 
