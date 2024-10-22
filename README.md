@@ -14,7 +14,7 @@ the sequence (see Figure 1(a)).
 - Diagonal: There is a sequence of _k_-1 tiles and there is at least one empty space on either end
 of the diagonal (see Figure 1(c)).
 
-![Figure 1](https://gitlab.com/myself9450436/the-tic-tac-toe-game/-/raw/main/Images/Figure1.png)
+![Figure 1](Images/Figure1.png)
 
 The _length_ of a sequence is the number of tiles in it. Figure 1 shows three different possibilities
 for achieving a sequence of length 3. As mentioned above, to win the game a player needs to form
